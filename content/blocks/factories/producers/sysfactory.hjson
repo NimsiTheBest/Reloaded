@@ -1,0 +1,31 @@
+{
+    "type": "GenericCrafter",
+    "name": "Synthene Synthesizer",
+    "description": "Turns Oil and Graphite into Synthene.",
+    "itemCapacity": 250,
+    "outputItem": {"item": "sys", "amount": 3},
+    "size": 3,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "craftTime": 200,
+    "updateEffect": "lancerLaserCharge",
+    "consumes": {
+    "power": 5.5,
+    "items": {
+    "items": 
+[
+{"liquid": "oil", "amount": 0.2},
+{ "item": "graphite", "amount": 6 }
+]
+    }
+    },
+    "requirements": [
+        { "item": "graphite", "amount": 150 },
+        { "item": "metaglass", "amount": 100 },
+        { "item": "silicon", "amount": 150 },
+        { "item": "crys", "amount": 50 }
+    ],
+    "category": "crafting",
+    "research": "graphite-press"
+}

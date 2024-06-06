@@ -1,0 +1,57 @@
+{
+  "type": "ItemTurret",
+  "name": "Glaze",
+  "description": "Fires homing Graphite or Lumisteel bullets.",
+  "health": 500,
+  "size": 2,
+  "shots": 1,
+  "ammoPerShot": 2,
+  "maxAmmo": 60,
+  "shootSound": "explosionbig",
+  "inaccuracy": 0,
+  "shootCone": 1,
+  "shootShake": 5,
+  "reload": 42,
+  "range": 230,
+  "recoil": 4,
+  "restitution": 0.0075,
+  "rotatespeed": 5,
+  "targetsAir": true,
+  "heatColor": "ffffff", 
+  "coolant": {
+    "fluid": "energel",
+    "consumption": 0.1 
+  },
+  "ammoTypes": {
+    "graphite": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 4,
+      "damage": 60,
+      "drag": 0.0075,
+      "status": "shocked",
+      "homingPower": 0.1
+    },
+    "lumi": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 4,
+      "damage": 10,
+      "drag": 0.0075,
+      "ammoMultiplier": 1,
+      "splashDamage": 17,
+      "splashDamageRadius": 54,
+      "reloadMultiplier": 4,
+      "status": "shocked",
+      "homingPower": 0.125
+    }
+  },
+  "requirements": [
+    { "amount": 50, "item": "metaglass" },
+    { "amount": 200, "item": "copper" },
+    { "amount": 200, "item": "lead" },
+    { "amount": 100, "item": "crys" }
+  ],
+  "category": "turret",
+  "research": "swarmer"
+}

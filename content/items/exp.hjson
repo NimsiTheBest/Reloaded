@@ -1,0 +1,7 @@
+type: item
+name: Experimenite
+description: Highly volatile substance, fuels experimental units and structures with potent yet unstable power.
+explosiveness: 0.4 
+flammability: 0.7
+charge: 0.4
+radioactivity: 0.2

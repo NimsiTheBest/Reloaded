@@ -1,0 +1,26 @@
+{
+    "type": "GenericCrafter",
+    "name": "Crystallithium Refinery",
+    "description": "Turns raw Crystallithium into Crystallithium bars with Coal. Can use Slag or Pyratite to increase production.",
+    "itemCapacity": 250,
+    "outputItem": {"item": "crys", "amount": 3},
+    "size": 3,
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 100,
+    "updateEffect": "lancerLaserCharge",
+    "consumes": {
+        "power": 3,
+        "items": [
+            {"item": "unref-crys", "amount": 4},
+            {"item": "coal", "amount": 2}
+        ]
+    },
+    "requirements": [
+        { "item": "copper", "amount": 130 },
+        { "item": "graphite", "amount": 50 },
+        { "item": "lead", "amount": 30 }
+    ],
+    "category": "crafting",
+    "research": "graphite-press"
+}

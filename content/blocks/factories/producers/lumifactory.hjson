@@ -1,0 +1,32 @@
+{
+    "type": "GenericCrafter",
+    "name": "Lumisteel Foundry",
+    "description": "Turns raw Crystallithium, Lead and Sand into Lumisteel with Coal. Can use Slag or Pyratite to increase production..",
+    "itemCapacity": 250,
+    "outputItem": {"item": "lumi", "amount": 3},
+    "size": 3,
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 120,
+    "updateEffect": "lancerLaserCharge",
+    "consumes": {
+    "power": 4.3,
+    "items": {
+    "items": 
+[
+{
+"item": "unref-crys", "amount": 3
+"item": "lead", "amount": 5
+"item": "sand", "amount": 2
+}
+]
+    }
+    },
+    "requirements": [
+        { "item": "copper", "amount": 130 },
+        { "item": "graphite", "amount": 50 },
+        { "item": "lead", "amount": 30 }
+    ],
+    "category": "crafting",
+    "research": "graphite-press"
+}

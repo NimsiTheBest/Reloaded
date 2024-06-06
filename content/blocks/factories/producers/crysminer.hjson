@@ -1,0 +1,21 @@
+{
+    "type": "GenericCrafter",
+    "name": "Crystallithium Drill",
+    "description": "Mines for Crystallithium.",
+    "itemCapacity": 250,
+    "outputItem": {"item": "unref-crys", "amount": 2},
+    "size": 2,
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 100,
+    "updateEffect": "lancerLaserCharge",
+    "consumes": {
+    "power": 1,
+    },
+    "requirements": [
+        { "item": "copper", "amount": 50 },
+        { "item": "lead", "amount": 40 }
+    ],
+    "category": "crafting",
+    "research": "graphite-press"
+}

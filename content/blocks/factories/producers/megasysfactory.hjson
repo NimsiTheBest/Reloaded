@@ -1,0 +1,29 @@
+{
+    "type": "GenericCrafter",
+    "name": "Increased Synthene Synthesizer",
+    "description": "Turns Oil and Graphite into Synthene faster. Uses cryofluid as a coolant.",
+    "itemCapacity": 250,
+    "outputItem": {"item": "sys", "amount": 6},
+    "size": 4,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true, // Removed extra double quote
+    "craftTime": 200,
+    "updateEffect": "lancerLaserCharge",
+    "consumes": {
+        "power": 5.5,
+        "items": [
+            {"liquid": "oil", "amount": 0.6},
+            {"liquid": "cryofluid", "amount": 0.2}, // Corrected liquid syntax
+            {"item": "graphite", "amount": 18}
+        ]
+    },
+    "requirements": [
+        { "item": "graphite", "amount": 300 },
+        { "item": "metaglass", "amount": 200 },
+        { "item": "silicon", "amount": 450 },
+        { "item": "crys", "amount": 150 }
+    ],
+    "category": "crafting",
+    "research": "graphite-press"
+}

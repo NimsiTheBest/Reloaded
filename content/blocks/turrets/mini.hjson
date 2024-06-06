@@ -1,0 +1,79 @@
+{
+  "type": "ItemTurret",
+  "name": "Mini",
+  "description": "Rapidly fires armor piercing bullets",
+  "health": 260,
+  "size": 1,
+  "shots": 2,
+  "ammoPerShot": 2,
+  "maxAmmo": 60,
+  "shootSound": "explosionbig",
+  "inaccuracy": 3,
+  "shootCone": 1,
+  "shootShake": 5,
+  "reload": 42,
+  "range": 230,
+  "recoil": 4,
+  "restitution": 0.0075,
+  "rotatespeed": 5,
+  "targetsAir": "false",
+  "heatColor": "ffffff", 
+  "ammoTypes": {
+    "copper": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 7
+      "damage": 6,
+      "drag": 0.0075,
+      pierceArmor: true
+      "homingPower": 0.1
+    },
+    "graphite": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 4,
+      "damage": 15,
+      "drag": 0.0075,
+      "reloadMultiplier": 0.8,
+      "pierceArmor": true
+      "homingPower": 0.1
+    },
+    "pyratite": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 4,
+      "damage": 5,
+      "drag": 0.0075,
+      "pierceArmor": true
+      "status": burning
+      "statusDuration": 300
+      "splashDamage": 17,
+      "splashDamageRadius": 34,
+      "homingPower": 0.1
+    },
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "lifetime": 60,
+      "speed": 7,
+      "damage": 13,
+      "drag": 0.0075,
+      "reloadMultiplier": 0.7,
+      pierceArmor: true
+      "splashDamage": 75,
+      "splashDamageRadius": 38,
+      "lightningChance": 1,
+      "lightningDamage": 13,
+      "status": shocked,
+      "ammoMultiplier": 3,
+      "homingPower": 0.1
+    },
+  },
+  "requirements": [
+    { "amount": 150, "item": "copper" },
+    { "amount": 100, "item": "lead" },
+    { "amount": 100, "item": "crys" },
+    { "amount": 100, "item": "lumi" }
+  ],
+  "category": "turret",
+  "research": "hail"
+}
